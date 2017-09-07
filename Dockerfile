@@ -1,5 +1,5 @@
 FROM alpine:3.4
-MAINTAINER Chris Baker <cgbaker@cgbaker.net>
+MAINTAINER Chad Gilbert <chad@freakingawesome.net>
 
 ENV HUGO_VERSION 0.26
 ENV HUGO_BINARY hugo_${HUGO_VERSION}_linux-64bit
@@ -10,7 +10,7 @@ RUN mkdir -p /aws
 # Install pygments (for syntax highlighting) and bash
 RUN apk update && \
     apk add py-pygments && \
-    apk add bash git && \
+    apk add bash git openssh && \
     apk -Uuv add groff less python py-pip && \
     pip install awscli && \
     apk --purge -v del py-pip && \
