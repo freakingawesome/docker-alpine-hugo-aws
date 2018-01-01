@@ -12,6 +12,7 @@ RUN apk update && \
     apk add py-pygments && \
     apk add bash git openssh && \
     apk -Uuv add groff less python py-pip && \
+    apk add imagemagick && \
     pip install awscli && \
     apk --purge -v del py-pip && \
     rm -rf /var/cache/apk/*
