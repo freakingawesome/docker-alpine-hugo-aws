@@ -1,7 +1,7 @@
 FROM alpine:3.4
 MAINTAINER Chad Gilbert <chad@freakingawesome.net>
 
-ENV HUGO_VERSION 0.26
+ENV HUGO_VERSION 0.32
 ENV HUGO_BINARY hugo_${HUGO_VERSION}_linux-64bit
 
 
